@@ -32,7 +32,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:src="@drawable/forgot_password"
+        android:src="@drawable/check_email"
         android:contentDescription="@string/app_name" />
 
     <Button
