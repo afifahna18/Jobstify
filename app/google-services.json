@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "488551504891",
+    "project_id": "jobstify",
+    "storage_bucket": "jobstify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488551504891:android:9330b48f7f37633eb1c95e",
+        "android_client_info": {
+          "package_name": "com.epitychia.jobstify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488551504891-i7s4j6hshqfca0pp2b7rqu9r20tqv7qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB52nCTAaePBN3QjVRfxnHlej_MEFoAuZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488551504891-i7s4j6hshqfca0pp2b7rqu9r20tqv7qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
