@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.epitychia.jobstify.R
-import com.epitychia.jobstify.SignInActivity
+import com.epitychia.jobstify.authentication.SignInActivity
 import kotlinx.android.synthetic.main.activity_intro.*
 
 
@@ -53,15 +53,15 @@ class IntroActivity : AppCompatActivity() {
                 vp_intro.currentItem += 1
             } else{
                 Intent(applicationContext, SignInActivity::class.java).also {
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     startActivity(it)
+                    finish()
                 }
             }
         }
         tv_intro_skip.setOnClickListener {
             Intent(applicationContext, SignInActivity::class.java).also {
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(it)
+                finish()
             }
         }
     }

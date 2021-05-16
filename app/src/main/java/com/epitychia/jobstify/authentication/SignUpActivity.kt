@@ -1,12 +1,13 @@
-package com.epitychia.jobstify
+package com.epitychia.jobstify.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.epitychia.jobstify.HomeActivity
+import com.epitychia.jobstify.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
@@ -72,6 +73,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_sign_up_login -> {
                 val moveIntent = Intent(this, SignInActivity::class.java)
                 startActivity(moveIntent)
+                finish()
             }
         }
     }

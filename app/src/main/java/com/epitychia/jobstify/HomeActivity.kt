@@ -3,6 +3,7 @@ package com.epitychia.jobstify
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.epitychia.jobstify.authentication.SignInActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 

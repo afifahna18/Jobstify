@@ -1,12 +1,13 @@
-package com.epitychia.jobstify
+package com.epitychia.jobstify.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.epitychia.jobstify.HomeActivity
+import com.epitychia.jobstify.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
@@ -41,6 +42,13 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener{
 
         val btnRegister: TextView = findViewById(R.id.btn_sign_in_Register)
         btnRegister.setOnClickListener(this)
+
+        btn_sign_in_forgot_password.setOnClickListener {
+            Intent(this@SignInActivity, ResetPasswordActivity::class.java).also{
+                startActivity(it)
+                finish()
+            }
+        }
 
     }
 

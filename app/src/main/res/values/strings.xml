@@ -10,7 +10,7 @@
     <string name="register">Register</string>
     <string name="register_title_1">Create</string>
     <string name="register_title_2">Your Account</string>
-    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password">Forgot your password?</string>
     <string name="already_have_account">Have an account already?</string>
     <string name="new_user">New user?</string>
     <string name="create_account">Create an Account</string>
@@ -19,5 +19,12 @@
     <string name="next_intro">Next</string>
     <string name="title_intro">Title Intro</string>
     <string name="title_intro_desc">Title Intro Desc</string>
+    <string name="forgot_password_desc">Enter your registered email below to receive password reset instruction</string>
+    <string name="remember_password">Remember password?</string>
+    <string name="email_sent">Email has been sent!</string>
+    <string name="email_sent_desc">Please check your inbox and click in the received link to reset a password</string>
+    <string name="do_not_receive">Do not receive the link? </string>
+    <string name="resend">Resend</string>
+    <string name="send_email">Send</string>
 
 </resources>

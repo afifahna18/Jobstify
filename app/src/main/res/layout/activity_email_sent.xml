@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".authentication.EmailSentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email_sent"
+        android:textAppearance="@style/title_dark"
+        android:fontFamily="@font/rubik_bold"
+        android:layout_marginTop="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/email_sent_desc"
+        android:textSize="16sp"
+        android:letterSpacing="-0.03"
+        android:textColor="#3C3A36"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/forgot_password"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/btn_reset_password_send_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/button_login_register"
+        android:background="@drawable/custom_button_register_login"
+        android:text="@string/login"
+        android:fontFamily="@font/rubik_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="14sp"
+            android:text="@string/do_not_receive"/>
+        <TextView
+            android:id="@+id/btn_resend_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/rubik_bold"
+            android:textSize="14sp"
+            android:text="@string/resend"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
