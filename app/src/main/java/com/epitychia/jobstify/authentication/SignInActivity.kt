@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import com.epitychia.jobstify.HomeActivity
+import com.epitychia.jobstify.view.HomeActivity
 import com.epitychia.jobstify.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_in.*

@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".view.HomeActivity">
 
-    <Button
-        android:id="@+id/btn_main_log_out"
-        android:layout_width="150dp"
-        android:layout_height="52dp"
-        android:background="@drawable/custom_button_register_login"
-        android:fontFamily="@font/rubik_regular"
-        android:text="@string/log_out"
-        android:textAppearance="@style/button_login_register" />
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation">
+    </FrameLayout>
 
-</LinearLayout>
+
+
+
+<com.etebarian.meowbottomnavigation.MeowBottomNavigation
+    android:id="@+id/bottomNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:mbn_countBackgroundColor="#ff6f00"
+    app:mbn_countTextColor="#ffffff"
+    app:mbn_defaultIconColor="#90a4ae"
+    app:mbn_rippleColor="#2f424242"
+    app:mbn_selectedIconColor="#67478F"
+    app:mbn_shadowColor="#1f212121" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
