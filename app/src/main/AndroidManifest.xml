@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jobstify">
-        <activity android:name=".authentication.EmailSentActivity"></activity>
+        <activity android:name=".view.EditProfileActivity"></activity>
+        <activity android:name=".authentication.EmailSentActivity" />
         <activity android:name=".authentication.ResetPasswordActivity" />
         <activity android:name=".splashscreen.SplashScreenActivity">
             <intent-filter>
