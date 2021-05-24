@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jobstify">
-        <activity android:name=".view.EditProfileActivity"></activity>
-        <activity android:name=".authentication.EmailSentActivity" />
-        <activity android:name=".authentication.ResetPasswordActivity" />
-        <activity android:name=".splashscreen.SplashScreenActivity">
+        <activity android:name=".view.EditProfileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".authentication.EmailSentActivity" />
+        <activity android:name=".authentication.ResetPasswordActivity" />
+        <activity android:name=".splashscreen.SplashScreenActivity">
+
         </activity>
         <activity android:name=".intro.IntroActivity" />
         <activity android:name=".authentication.SignInActivity" />
