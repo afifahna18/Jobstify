@@ -41,6 +41,8 @@
     <string name="ig">Instagram</string>
     <string name="wa">Whatsapp</string>
     <string name="line">ID Line</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
