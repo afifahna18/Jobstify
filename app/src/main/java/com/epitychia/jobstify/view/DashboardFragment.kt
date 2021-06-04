@@ -1,14 +1,13 @@
 package com.epitychia.jobstify.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.epitychia.jobstify.R
-import com.epitychia.jobstify.UserAdapter
+import com.epitychia.jobstify.adapter.UserAdapter
 import com.epitychia.jobstify.databinding.FragmentDashboardBinding
 import com.epitychia.jobstify.model.User
 import com.google.firebase.database.*
@@ -16,7 +15,7 @@ import com.google.firebase.database.*
 
 class DashboardFragment : Fragment() {
 
-    private lateinit var dbref: DatabaseReference
+    private lateinit var dbRef: DatabaseReference
     private lateinit var binding: FragmentDashboardBinding
     private lateinit var userArrayList: ArrayList<User>
     //    private lateinit var recyclerView: RecyclerView
@@ -36,6 +35,11 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
+        binding.etSearch.setOnClickListener{
+            val moveIntent = Intent(context, SearchActivity::class.java)
+            context?.startActivity(moveIntent)
+        }
+
         binding.rvUsers.layoutManager = LinearLayoutManager(context)
         binding.rvUsers.setHasFixedSize(true)
 
@@ -45,9 +49,9 @@ class DashboardFragment : Fragment() {
 
     private fun getUserData() {
 
-        dbref = FirebaseDatabase.getInstance().getReference("Users")
+        dbRef = FirebaseDatabase.getInstance().getReference("Users")
 
-        dbref.addValueEventListener(object : ValueEventListener {
+        dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()) {
@@ -67,6 +71,8 @@ class DashboardFragment : Fragment() {
 
         })
     }
+
+
 
     companion object {
         @JvmStatic
