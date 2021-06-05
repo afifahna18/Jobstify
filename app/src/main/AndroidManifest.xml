@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.epitychia.jobstify">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.epitychia.jobstify.READ_DATABASE"
+        android:protectionLevel="normal" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_app"
@@ -9,6 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jobstify">
+        <activity android:name=".view.FavoriteJobActivity"></activity>
+
+        <provider
+            android:name=".db.JobProvider"
+            android:authorities="com.epitychia.jobstify"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.epitychia.jobstify.READ_DATABASE" />
+
+        <activity android:name=".view.JobCategoriActivity" />
+        <activity android:name=".view.DetailJobActivity" />
+        <activity android:name=".view.SearchActivity" />
         <activity android:name=".view.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +38,7 @@
         </activity>
         <activity android:name=".authentication.EmailSentActivity" />
         <activity android:name=".authentication.ResetPasswordActivity" />
-        <activity android:name=".splashscreen.SplashScreenActivity">
-
-        </activity>
+        <activity android:name=".splashscreen.SplashScreenActivity" />
         <activity android:name=".intro.IntroActivity" />
         <activity android:name=".authentication.SignInActivity" />
         <activity android:name=".authentication.SignUpActivity" />

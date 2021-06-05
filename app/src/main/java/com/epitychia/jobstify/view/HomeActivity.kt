@@ -1,11 +1,9 @@
 package com.epitychia.jobstify.view
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.epitychia.jobstify.R
-import com.epitychia.jobstify.authentication.SignInActivity
 import com.epitychia.jobstify.databinding.ActivityHomeBinding
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.google.firebase.auth.FirebaseAuth
@@ -24,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        addFragment(DashboardFragment.newInstance())
+        addFragment(DashboardJobFragment.newInstance())
         bottomNavigation.show(0)
         bottomNavigation.add(MeowBottomNavigation.Model(0, R.drawable.ic_home))
         bottomNavigation.add(MeowBottomNavigation.Model(1, R.drawable.ic_favorite))
@@ -34,7 +32,7 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigation.setOnClickMenuListener {
             when (it.id){
                 0 -> {
-                    replaceFragment(DashboardFragment.newInstance())
+                    replaceFragment(DashboardJobFragment.newInstance())
                 }
                 1 -> {
                     replaceFragment(FavouriteFragment.newInstance())
@@ -45,7 +43,7 @@ class HomeActivity : AppCompatActivity() {
                 3 -> {
                     replaceFragment(ProfileFragment.newInstance())
                 } else -> {
-                replaceFragment(DashboardFragment.newInstance())
+                replaceFragment(DashboardJobFragment.newInstance())
                 }
             }
         }

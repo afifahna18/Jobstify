@@ -1,4 +1,4 @@
-package com.epitychia.jobstify
+package com.epitychia.jobstify.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
