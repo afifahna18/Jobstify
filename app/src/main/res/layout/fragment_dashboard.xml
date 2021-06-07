@@ -51,7 +51,7 @@
 
             <EditText
                 android:id="@+id/et_search"
-                android:layout_width="320dp"
+                android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/custom_botton_search"
@@ -62,15 +62,15 @@
                 android:paddingEnd="12dp"
                 android:textColorHint="#9f9fb3" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_above="@+id/tv_artist"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="5dp"
-                android:padding="4dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_filter" />
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_above="@+id/tv_artist"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:padding="4dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/ic_filter" />-->
 
         </LinearLayout>
 

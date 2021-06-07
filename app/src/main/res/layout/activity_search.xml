@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".view.SearchActivity">
@@ -13,29 +14,35 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="Find your Job"
         android:textColor="#000"
-        android:textSize="28sp"
+        android:textSize="26sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_search"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@id/tv_title"
         android:background="@drawable/custom_botton_search"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="12dp"
         android:hint="Search"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
-        android:textColorHint="#9f9fb3" />
+        android:textColorHint="#9f9fb3"
+        app:endIconMode="clear_text"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_jobs"
+        android:layout_below="@id/et_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
         tools:listitem="@layout/item_row_job" />
 
-</LinearLayout>
+
+
+</RelativeLayout>

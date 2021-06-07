@@ -15,14 +15,11 @@ import com.epitychia.jobstify.databinding.FragmentDashboardJobBinding
 class DashboardJobFragment : Fragment() {
 
     private lateinit var binding: FragmentDashboardJobBinding
-    private lateinit var adapter: JobAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_dashboard_user, container, false)
         binding = FragmentDashboardJobBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
@@ -37,58 +34,61 @@ class DashboardJobFragment : Fragment() {
 
         binding.cvArtist.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Artist")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Artist")
             context?.startActivity(moveIntent)
         }
 
         binding.cvIt.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "IT")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "IT")
             context?.startActivity(moveIntent)
         }
 
         binding.cvChef.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Chef")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Chef")
             context?.startActivity(moveIntent)
         }
 
         binding.cvNanny.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Nanny")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Nanny")
             context?.startActivity(moveIntent)
         }
 
         binding.cvMusician.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Musician")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Musician")
             context?.startActivity(moveIntent)
         }
 
         binding.cvActress.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Actress")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Actress")
             context?.startActivity(moveIntent)
         }
 
         binding.cvInstructor.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Instructor")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Instructor")
             context?.startActivity(moveIntent)
         }
 
         binding.cvAuthor.setOnClickListener {
             val moveIntent = Intent(context, JobCategoriActivity::class.java)
-            moveIntent.putExtra("EXTRA_CATEGORY", "Author")
+            moveIntent.putExtra(JobCategoriActivity.EXTRA_CATEGORY, "Author")
             context?.startActivity(moveIntent)
         }
 
-        binding.btnFav.setOnClickListener {
-            val intent = Intent(context, FavoriteJobActivity::class.java)
-            context?.startActivity(intent)
-        }
 
 
+
+        showRecyclerView()
+
+
+    }
+
+    private fun showRecyclerView() {
         if (activity != null) {
             val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[JobViewModel::class.java]
             val listJobs = viewModel.getJobs()
@@ -102,7 +102,6 @@ class DashboardJobFragment : Fragment() {
             }
         }
     }
-
 
 
     companion object {

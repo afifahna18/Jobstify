@@ -1,16 +1,18 @@
 package com.epitychia.jobstify.view
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.ImageView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.epitychia.jobstify.JobViewModel
 import com.epitychia.jobstify.adapter.SearchAdapter
 import com.epitychia.jobstify.databinding.ActivitySearchBinding
-import com.epitychia.jobstify.model.User
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_search.*
 
 class SearchActivity : AppCompatActivity() {
 

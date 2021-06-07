@@ -2,6 +2,8 @@ package com.epitychia.jobstify.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.epitychia.jobstify.R
 import com.epitychia.jobstify.databinding.ActivityHomeBinding
@@ -22,6 +24,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         addFragment(DashboardJobFragment.newInstance())
         bottomNavigation.show(0)
         bottomNavigation.add(MeowBottomNavigation.Model(0, R.drawable.ic_home))
@@ -35,7 +38,7 @@ class HomeActivity : AppCompatActivity() {
                     replaceFragment(DashboardJobFragment.newInstance())
                 }
                 1 -> {
-                    replaceFragment(FavouriteFragment.newInstance())
+                    replaceFragment(FavoriteFragment.newInstance())
                 }
                 2 -> {
                     replaceFragment(ChatroomFragment.newInstance())

@@ -9,40 +9,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8.0dip"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8.0dip">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="center_vertical"
             android:gravity="center_vertical">
 
             <TextView
                 android:id="@+id/tv_title"
-                android:layout_width="wrap_content"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:gravity="center"
+
                 android:text="Find your dream Job"
                 android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_title"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:text="Temukan Pekerjaan impianmu"
-                android:textColor="#000"
-                android:textSize="15dp" />
+<!--            <ImageView-->
+<!--                android:id="@+id/btn_filter"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:padding="4dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/ic_info" />-->
 
-        </RelativeLayout>
 
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Temukan Pekerjaan impianmu"
+            android:textColor="#000"
+            android:textSize="15dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,29 +62,29 @@
 
             <TextView
                 android:id="@+id/et_search"
-                android:layout_width="320dp"
+                android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/custom_botton_search"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="12dp"
                 android:gravity="center_vertical"
-                android:text="Search"
-                android:textSize="18sp"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
-                android:textColorHint="#9f9fb3" />
+                android:text="Search"
+                android:textColorHint="#9f9fb3"
+                android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/btn_fav"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_above="@+id/tv_artist"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="5dp"
-                android:padding="4dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_filter" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/btn_filter"-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_above="@+id/tv_artist"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:padding="4dp"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--                android:src="@drawable/ic_filter" />-->
 
         </LinearLayout>
 
@@ -455,8 +463,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="Recomended for you"
