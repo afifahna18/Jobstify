@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.epitychia.jobstify.view.HomeActivity
 import com.epitychia.jobstify.R
+import com.epitychia.jobstify.view.GetUserActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
@@ -56,7 +57,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
             .addOnCompleteListener(this){
                     if (it.isSuccessful){
                         Toast.makeText(this, "Registration is Successful !", Toast.LENGTH_SHORT).show()
-                        Intent(this, HomeActivity::class.java).also { intent ->
+                        Intent(this, GetUserActivity::class.java).also { intent ->
                             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                             startActivity(intent)
                         }

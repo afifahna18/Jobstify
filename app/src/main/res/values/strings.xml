@@ -33,9 +33,7 @@
     <string name="gender">Female</string>
     <string name="title_age">Age</string>
     <string name="age">56 Years</string>
-    <string name="proficiency1">Proficiency 1</string>
-    <string name="proficiency2">Proficiency 2</string>
-    <string name="proficiency3">Proficiency 3</string>
+    <string name="proficiency">Proficiency</string>
     <string name="title_about">About</string>
     <string name="about">About Me</string>
     <string name="ig">Instagram</string>
@@ -43,6 +41,9 @@
     <string name="line">ID Line</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_fill_data">Fill Your</string>
+    <string name="title_fill_data2">Personal Data</string>
+
 
 
 </resources>

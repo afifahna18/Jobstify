@@ -10,4 +10,9 @@
     <color name="purple">#37284A</color>
     <color name="red">#FF0000</color>
 
+    <color name="colorPrimary">#425C59</color>
+    <color name="colorAccent">#FFCEA3</color>
+    <color name="edittextColor">#DDDDDD</color>
+    <color name="text_profile">#22215B</color>
+
 </resources>

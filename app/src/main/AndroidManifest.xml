@@ -29,19 +29,21 @@
         <activity android:name=".view.DetailJobActivity" />
         <activity android:name=".view.SearchActivity" />
         <activity android:name=".view.HomeActivity">
+
+        </activity>
+        <activity android:name=".authentication.EmailSentActivity" />
+        <activity android:name=".authentication.ResetPasswordActivity" />
+        <activity android:name=".splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".authentication.EmailSentActivity" />
-        <activity android:name=".authentication.ResetPasswordActivity" />
-        <activity android:name=".splashscreen.SplashScreenActivity" />
         <activity android:name=".intro.IntroActivity" />
         <activity android:name=".authentication.SignInActivity" />
         <activity android:name=".authentication.SignUpActivity" />
-        <activity android:name=".view.EditProfileActivity" />
+        <activity android:name=".view.GetUserActivity" />
     </application>
 
 </manifest>
