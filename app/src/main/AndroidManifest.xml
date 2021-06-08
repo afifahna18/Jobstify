@@ -17,7 +17,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jobstify">
-        <activity android:name=".view.FavoriteJobActivity"></activity>
 
         <provider
             android:name=".db.JobProvider"
