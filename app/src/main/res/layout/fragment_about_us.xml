@@ -219,6 +219,7 @@
                 android:layout_weight="0.25"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:backgroundTint="#d0e5d9"
                 android:focusable="true">
 
                 <RelativeLayout
@@ -300,6 +301,7 @@
                 android:layout_height="200dp"
                 android:layout_margin="10dp"
                 android:layout_weight="0.25"
+                android:backgroundTint="#eed1b2"
                 android:background="?attr/selectableItemBackground"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
@@ -394,6 +396,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="0.25"
+                android:backgroundTint="#8A7D8688"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
                 android:focusable="true">
@@ -477,6 +480,7 @@
                 android:layout_height="200dp"
                 android:layout_margin="10dp"
                 android:layout_weight="0.25"
+                android:backgroundTint="#B1A1BF"
                 android:background="?attr/selectableItemBackground"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
