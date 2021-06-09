@@ -27,7 +27,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/img_content_photo"
-            android:layout_toRightOf="@id/img_content_photo"
             android:layout_marginTop="8dp"
             android:orientation="vertical">
 
@@ -40,6 +39,7 @@
                 android:textColor="#4E4E4E"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/gilroy_bold"
                 tools:text="Username" />
 
             <TableLayout
@@ -56,6 +56,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/gilroy_bold"
                         android:text="Name" />
 
                     <TextView
@@ -63,6 +64,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_bold"
                         tools:text="Name" />
                 </TableRow>
                 <TableRow
@@ -73,12 +75,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/gilroy_bold"
                         android:text="Username" />
                     <TextView
                         android:id="@+id/tv_username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_bold"
                         tools:text="username" />
                 </TableRow>
                 <TableRow
@@ -89,12 +93,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/gilroy_bold"
                         android:text="Category" />
                     <TextView
                         android:id="@+id/tv_category"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_bold"
                         tools:text="Category" />
                 </TableRow>
                 <TableRow
@@ -104,20 +110,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/gilroy_bold"
                         android:text="Skills" />
                     <TextView
                         android:id="@+id/tv_skill"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_bold"
                         tools:text="skills" />
                 </TableRow>
+
             </TableLayout>
-
-
-
-
-
 
         </LinearLayout>
 

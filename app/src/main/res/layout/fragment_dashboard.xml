@@ -25,7 +25,8 @@
                 android:text="Find your dream Job"
                 android:textColor="#000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/gilroy_bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
                 android:gravity="center"
                 android:text="Temukan Pekerjaan impianmu"
                 android:textColor="#000"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:fontFamily="@font/gilroy_bold"/>
 
         </RelativeLayout>
 
@@ -53,10 +55,11 @@
                 android:id="@+id/et_search"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/custom_botton_search"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="12dp"
+                android:fontFamily="@font/gilroy_bold"
                 android:hint="Search"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"

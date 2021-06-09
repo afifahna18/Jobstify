@@ -8,19 +8,19 @@ import android.view.ViewGroup
 import com.epitychia.jobstify.R
 
 
-class ChatroomFragment : Fragment() {
+class AboutUsFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_chatroom, container, false)
+        return inflater.inflate(R.layout.fragment_about_us, container, false)
     }
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            ChatroomFragment().apply {
+            AboutUsFragment().apply {
                 arguments = Bundle().apply {}
             }
     }

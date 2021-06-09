@@ -2,15 +2,12 @@ package com.epitychia.jobstify.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.epitychia.jobstify.R
 import com.epitychia.jobstify.databinding.ActivityHomeBinding
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.fragment_profile.*
 
 
 class HomeActivity : AppCompatActivity() {
@@ -41,7 +38,7 @@ class HomeActivity : AppCompatActivity() {
                     replaceFragment(FavoriteFragment.newInstance())
                 }
                 2 -> {
-                    replaceFragment(ChatroomFragment.newInstance())
+                    replaceFragment(AboutUsFragment.newInstance())
                 }
                 3 -> {
                     replaceFragment(ProfileFragment.newInstance())

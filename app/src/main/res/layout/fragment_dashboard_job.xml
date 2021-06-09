@@ -28,16 +28,8 @@
                 android:text="Find your dream Job"
                 android:textColor="#000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
-
-<!--            <ImageView-->
-<!--                android:id="@+id/btn_filter"-->
-<!--                android:layout_width="40dp"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:padding="4dp"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                android:src="@drawable/ic_info" />-->
-
+                android:textStyle="bold"
+                android:fontFamily="@font/gilroy_bold"/>
 
         </LinearLayout>
 
@@ -50,7 +42,8 @@
             android:gravity="center"
             android:text="Temukan Pekerjaan impianmu"
             android:textColor="#000"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroy_bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +127,8 @@
                         android:text="Artist"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -177,7 +171,8 @@
                         android:text="IT"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -221,7 +216,8 @@
                         android:text="Chef"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -265,7 +261,8 @@
                         android:text="Nanny"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -318,7 +315,8 @@
                         android:text="Musician"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -348,7 +346,8 @@
                         android:layout_marginBottom="5dp"
                         android:padding="10dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/category_actrees" />
+                        android:src="@drawable/category_actrees"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                     <TextView
                         android:id="@+id/tv_actress"
@@ -361,7 +360,8 @@
                         android:text="Actress"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -405,7 +405,8 @@
                         android:text="Instructor"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -449,7 +450,8 @@
                         android:text="Author"
                         android:textColor="#000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"/>
 
                 </RelativeLayout>
 
@@ -470,7 +472,8 @@
             android:text="Recomended for you"
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/gilroy_bold"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_jobs"
